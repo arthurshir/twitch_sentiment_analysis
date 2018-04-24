@@ -1,0 +1,16 @@
+{
+  "name": "chatbot_server",
+  "version": "1.0.0",
+  "description": "Chatbot server for twitch",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.85.0",
+    "tmi.js": "^1.2.1",
+    "watson-developer-cloud": "^3.3.0"
+  }
+}

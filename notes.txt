@@ -1,0 +1,38 @@
+
+
+Twitch Javascript API:
+  https://docs.tmijs.org/
+
+Get API key:
+  http://twitchapps.com/tmi/
+
+
+Code Used:
+  - https://www.ibm.com/developerworks/library/cc-sample-code-tone-analyzer-watson-node/index.html
+  - https://www.youtube.com/watch?v=K6N9dSMb7sM
+  - https://hackernoon.com/setting-up-node-js-with-a-database-part-1-3f2461bdd77f
+  - https://github.com/github/gitignore/blob/master/Node.gitignore
+
+Helpful:
+  - Understanding exporst
+    - https://www.sitepoint.com/understanding-module-exports-exports-node-js/
+
+
+Data Schema:
+
+{
+  "<username>": {
+    "num_happy_messages": 1,
+    "num_unhappy_messages": 1
+  },
+  ...
+}
+
+
+Npm, MySQL, etc:
+  npm i knex mysql express body-parser --save
+  npm i knex -g
+
+
+Nice style and Knex cheatsheet:
+  https://devhints.io/knex
