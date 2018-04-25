@@ -1,10 +1,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+var cors = require('cors')
 const store = require('./store/store');
 const app = express();
+app.use(cors({credentials: true, origin: true}));
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
+// global controller
 app.post('/createUser', (req, res) => {
   console.log(req.body.username);
   store

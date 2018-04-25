@@ -1,19 +1,16 @@
 Todos:
+- Add Material design and rest of table to project
+- Host on AWS
+- Write up report
 
-- Set up Project
+DONE:
+x- Set up Project
   - Npm init
   - Hmtl.js pakcage and requiret
   - Setup options
   - Generate Twitch.tv OAuth token
   - Create our connection
   - Add event listeners w/ logic
-
-
-
 - Setup Node on node.js
 - Use TMI.js
-
-
-
-
 http://twitchapps.com/tmi/
