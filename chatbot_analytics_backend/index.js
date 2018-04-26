@@ -37,13 +37,13 @@ app.post('/incrementUserNeutralMessage', (req, res) => {
 })
 
 app.get('/getMostHappyUsers', (req, res) => {
-  store.getTopNMostHappyUsers(3).then(function(results) {
+  store.getTopNMostHappyUsers(5).then(function(results) {
     res.json(results);
   });
 })
 
 app.get('/getMostUnhappyUsers', (req, res) => {
-  store.getTopNMostUnhappyUsers(3).then(function(results) {
+  store.getTopNMostUnhappyUsers(5).then(function(results) {
     res.json(results);
   });
 })

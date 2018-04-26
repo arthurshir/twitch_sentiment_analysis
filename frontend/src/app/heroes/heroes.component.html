@@ -1,23 +1,17 @@
 <div style="display: flex;">
   <div style="flex: 1;">
-    <h2>Top Unhappy Users</h2>
-    <ul class="heroes">
-      <li *ngFor="let user of happyUsers">
-        <span class="badge">{{user.username}}</span>
-        <span>{{user.unhappy_description_string()}}</span>
-    <!--     <span>{{user.num_unhappy_messages}}</span>
-        <span>{{user.num_happy_messages}}</span> -->
+    <h2>Top 5 Unhappy Users</h2>
+    <ul class="users">
+      <li *ngFor="let user of happyUsers; let i = index">
+        <span><b>{{i + 1}}. [{{user.username}}]</b> {{user.unhappy_description_string()}}</span>
       </li>
     </ul>
   </div>
   <div style="flex: 1;">
-    <h2>Top Happy Users</h2>
-    <ul class="heroes">
-      <li *ngFor="let user of unhappyUsers">
-        <span class="badge">{{user.username}}</span>
-        <span>{{user.happy_description_string()}}</span>
-    <!--     <span>{{user.num_unhappy_messages}}</span>
-        <span>{{user.num_happy_messages}}</span> -->
+    <h2>Top 5 Happy Users</h2>
+    <ul class="users">
+      <li *ngFor="let user of unhappyUsers; let i = index">
+        <span><b>{{i + 1}}. [{{user.username}}]</b> {{user.unhappy_description_string()}}</span>
       </li>
     </ul>
   </div>
