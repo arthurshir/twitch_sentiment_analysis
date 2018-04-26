@@ -2,9 +2,7 @@
   <div style="flex: 1;">
     <h2>Top Unhappy Users</h2>
     <ul class="heroes">
-      <li *ngFor="let user of happyUsers"
-        [class.selected]="hero === selectedHero"
-        (click)="onSelect(hero)">
+      <li *ngFor="let user of happyUsers">
         <span class="badge">{{user.username}}</span>
         <span>{{user.unhappy_description_string()}}</span>
     <!--     <span>{{user.num_unhappy_messages}}</span>
@@ -15,9 +13,7 @@
   <div style="flex: 1;">
     <h2>Top Happy Users</h2>
     <ul class="heroes">
-      <li *ngFor="let user of unhappyUsers"
-        [class.selected]="hero === selectedHero"
-        (click)="onSelect(hero)">
+      <li *ngFor="let user of unhappyUsers">
         <span class="badge">{{user.username}}</span>
         <span>{{user.happy_description_string()}}</span>
     <!--     <span>{{user.num_unhappy_messages}}</span>
@@ -25,18 +21,6 @@
       </li>
     </ul>
   </div>
-</div>
-
-<div *ngIf="selectedHero">
-
-  <h2>{{ selectedHero.name | uppercase }} Details</h2>
-  <div><span>id: </span>{{selectedHero.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="selectedHero.name" placeholder="name">
-    </label>
-  </div>
-
 </div>
 
 
