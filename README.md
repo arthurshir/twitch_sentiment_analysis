@@ -3,7 +3,6 @@ The goal of this project was to create an application that would connect to a st
 
 
 # Goals for this project:
-- To display technical achievement.
 - To utilize the Twitch API in an interesting and unique way.
 - To create a proof a concept of a useful business benefit.
 
