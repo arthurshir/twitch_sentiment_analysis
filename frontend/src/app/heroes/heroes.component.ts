@@ -25,7 +25,7 @@ export class HeroesComponent implements OnInit {
     this.heroService.getTopHappyUsers()
     .subscribe(heroes => {
       console.log(heroes);
-      this.unhappyUsers = heroes.map(x => Object.assign(new Hero(), x))
+      this.happyUsers = heroes.map(x => Object.assign(new Hero(), x))
     });
   }
 
@@ -33,7 +33,7 @@ export class HeroesComponent implements OnInit {
     this.heroService.getTopUnhappyUsers()
     .subscribe(heroes => {
       console.log(heroes)
-      this.happyUsers = heroes.map(x => Object.assign(new Hero(), x))
+      this.unhappyUsers = heroes.map(x => Object.assign(new Hero(), x))
      });
   }
 

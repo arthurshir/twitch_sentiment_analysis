@@ -2,7 +2,7 @@
   <div style="flex: 1;">
     <h2>Top 5 Unhappy Users</h2>
     <ul class="users">
-      <li *ngFor="let user of happyUsers; let i = index">
+      <li *ngFor="let user of unhappyUsers; let i = index">
         <span><b>{{i + 1}}. [{{user.username}}]</b> {{user.unhappy_description_string()}}</span>
       </li>
     </ul>
@@ -10,8 +10,8 @@
   <div style="flex: 1;">
     <h2>Top 5 Happy Users</h2>
     <ul class="users">
-      <li *ngFor="let user of unhappyUsers; let i = index">
-        <span><b>{{i + 1}}. [{{user.username}}]</b> {{user.unhappy_description_string()}}</span>
+      <li *ngFor="let user of happyUsers; let i = index">
+        <span><b>{{i + 1}}. [{{user.username}}]</b> {{user.happy_description_string()}}</span>
       </li>
     </ul>
   </div>
