@@ -1,26 +1,31 @@
-<h2>Top Unhappy Users</h2>
-<ul class="heroes">
-  <li *ngFor="let user of happyUsers"
-    [class.selected]="hero === selectedHero"
-    (click)="onSelect(hero)">
-    <span class="badge">{{user.username}}</span>
-    <span>{{user.unhappy_description_string()}}</span>
-<!--     <span>{{user.num_unhappy_messages}}</span>
-    <span>{{user.num_happy_messages}}</span> -->
-  </li>
-</ul>
-
-<h2>Top Happy Users</h2>
-<ul class="heroes">
-  <li *ngFor="let user of unhappyUsers"
-    [class.selected]="hero === selectedHero"
-    (click)="onSelect(hero)">
-    <span class="badge">{{user.username}}</span>
-    <span>{{user.happy_description_string()}}</span>
-<!--     <span>{{user.num_unhappy_messages}}</span>
-    <span>{{user.num_happy_messages}}</span> -->
-  </li>
-</ul>
+<div style="display: flex;">
+  <div style="flex: 1;">
+    <h2>Top Unhappy Users</h2>
+    <ul class="heroes">
+      <li *ngFor="let user of happyUsers"
+        [class.selected]="hero === selectedHero"
+        (click)="onSelect(hero)">
+        <span class="badge">{{user.username}}</span>
+        <span>{{user.unhappy_description_string()}}</span>
+    <!--     <span>{{user.num_unhappy_messages}}</span>
+        <span>{{user.num_happy_messages}}</span> -->
+      </li>
+    </ul>
+  </div>
+  <div style="flex: 1;">
+    <h2>Top Happy Users</h2>
+    <ul class="heroes">
+      <li *ngFor="let user of unhappyUsers"
+        [class.selected]="hero === selectedHero"
+        (click)="onSelect(hero)">
+        <span class="badge">{{user.username}}</span>
+        <span>{{user.happy_description_string()}}</span>
+    <!--     <span>{{user.num_unhappy_messages}}</span>
+        <span>{{user.num_happy_messages}}</span> -->
+      </li>
+    </ul>
+  </div>
+</div>
 
 <div *ngIf="selectedHero">
 
