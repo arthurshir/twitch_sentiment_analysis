@@ -3,6 +3,9 @@
     <h2>Top 5 Unhappy Users</h2>
     <ul class="users">
       <li *ngFor="let user of unhappyUsers; let i = index">
+        <div style="margin-bottom: 4px; font-size: 14px; font-weight: bold;" *ngIf="i == 0">
+          Biggest Hater 😈<br>
+        </div>
         <span><b>{{i + 1}}. [{{user.username}}]</b> {{user.unhappy_description_string()}}</span>
       </li>
     </ul>
@@ -11,6 +14,9 @@
     <h2>Top 5 Happy Users</h2>
     <ul class="users">
       <li *ngFor="let user of happyUsers; let i = index">
+        <div style="margin-bottom: 4px; font-size: 14px; font-weight: bold;" *ngIf="i == 0">
+          Biggest Fan 👑<br>
+        </div>
         <span><b>{{i + 1}}. [{{user.username}}]</b> {{user.happy_description_string()}}</span>
       </li>
     </ul>
