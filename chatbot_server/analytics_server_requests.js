@@ -1,5 +1,5 @@
 var request = require('request');
-const chatbot_analytics_server_url = 'http://localhost:7555';
+var config = require('./config');
 
 exports.incrementUserUnhappyMessage = function(username) {
   request.post({
@@ -7,7 +7,7 @@ exports.incrementUserUnhappyMessage = function(username) {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
     },
-    url:     chatbot_analytics_server_url + '/incrementUserUnhappyMessage',
+    url: config.chatbot_analytics_server_url + '/incrementUserUnhappyMessage',
     body: JSON.stringify({
       username: username
     })
@@ -22,7 +22,7 @@ exports.incrementUserHappyMessage = function(username) {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
     },
-    url:     chatbot_analytics_server_url + '/incrementUserHappyMessage',
+    url: config.chatbot_analytics_server_url + '/incrementUserHappyMessage',
     body: JSON.stringify({
       username: username
     })
@@ -37,7 +37,7 @@ exports.incrementUserNeutralMessage = function(username) {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
     },
-    url:     chatbot_analytics_server_url + '/incrementUserNeutralMessage',
+    url: config.chatbot_analytics_server_url + '/incrementUserNeutralMessage',
     body: JSON.stringify({
       username: username
     })
